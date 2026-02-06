@@ -45,11 +45,10 @@ export default {
 ## Supported Post Types
 
 - **Notes**: Short text posts, syndicated as LinkedIn text posts with a permalink
-- **Articles**: Long-form posts with a title, syndicated as LinkedIn article cards with URL, title, and description
+- **Articles**: Long-form posts with a title, syndicated as LinkedIn article cards with URL, title, description, and thumbnail image. Thumbnails are resolved automatically: first from the post's featured photo, then by scraping the article's Open Graph image tag.
 
 ## Known Limitations
 
-- **No image/thumbnail support**: Article cards display without a thumbnail image. Adding thumbnail support requires the LinkedIn Images API, which is planned for a future version.
 - **Token expiration**: LinkedIn access tokens expire (typically after 60 days). You will need to refresh your token manually. A companion OAuth endpoint package (`@rmdes/indiekit-endpoint-linkedin`) is planned to handle token acquisition through the Indiekit UI.
 
 ## Credits

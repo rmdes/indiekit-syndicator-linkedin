@@ -34,6 +34,7 @@
   ],
   "dependencies": {
     "html-to-text": "^9.0.0",
+    "jsdom": "^24.0.0",
     "linkedin-api-client": "^0.3.0"
   },
   "peerDependencies": {
