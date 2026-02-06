@@ -1,6 +1,6 @@
 {
   "name": "@rmdes/indiekit-syndicator-linkedin",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "LinkedIn syndicator for Indiekit, supporting notes and articles",
   "type": "module",
   "main": "index.js",
