@@ -1,0 +1,49 @@
+{
+  "name": "@rmdes/indiekit-syndicator-linkedin",
+  "version": "1.0.0",
+  "description": "LinkedIn syndicator for Indiekit, supporting notes and articles",
+  "type": "module",
+  "main": "index.js",
+  "exports": "./index.js",
+  "keywords": [
+    "indiekit",
+    "indiekit-plugin",
+    "indieweb",
+    "linkedin",
+    "syndication"
+  ],
+  "author": "rmdes",
+  "contributors": [
+    {
+      "name": "Giacomo Debidda",
+      "url": "https://giacomodebidda.com"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmdes/indiekit-syndicator-linkedin"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "assets",
+    "lib",
+    "index.js"
+  ],
+  "dependencies": {
+    "html-to-text": "^9.0.0",
+    "linkedin-api-client": "^0.3.0"
+  },
+  "peerDependencies": {
+    "@indiekit/error": "^1.0.0-beta.25",
+    "@indiekit/indiekit": "1.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@indiekit/error": "^1.0.0-beta.25"
+  }
+}
