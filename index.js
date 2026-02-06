@@ -79,8 +79,19 @@ export default class LinkedInSyndicator {
 
   async syndicate(properties, publication) {
     try {
+      // Resolve token dynamically so tokens set by the endpoint
+      // (on startup restore or re-auth) are picked up without restart
+      const accessToken =
+        this.options.accessToken || process.env.LINKEDIN_ACCESS_TOKEN;
+      if (!accessToken) {
+        throw new IndiekitError(
+          "LinkedIn access token not configured. Set LINKEDIN_ACCESS_TOKEN or connect via the LinkedIn endpoint.",
+          { plugin: this.name, status: 401 },
+        );
+      }
+
       const linkedin = new LinkedIn({
-        accessToken: this.options.accessToken,
+        accessToken,
         characterLimit: this.options.characterLimit,
         postsAPIVersion: this.options.postsAPIVersion,
       });
