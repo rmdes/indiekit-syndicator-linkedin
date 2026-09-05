@@ -1,6 +1,6 @@
 {
   "name": "@rmdes/indiekit-syndicator-linkedin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "LinkedIn syndicator for Indiekit, supporting notes and articles",
   "type": "module",
   "main": "index.js",
@@ -39,7 +39,7 @@
   },
   "peerDependencies": {
     "@indiekit/error": "^1.0.0-beta.25",
-    "@indiekit/indiekit": "1.x"
+    "@indiekit/indiekit": ">=1.0.0-beta.25"
   },
   "publishConfig": {
     "access": "public"
